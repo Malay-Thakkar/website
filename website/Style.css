@@ -6,6 +6,7 @@
 
 body {
     background-image: url(banner.png);
+    background-color: rgba(59, 41, 46, 255);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +15,42 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+a:link {
+    color: rgb(119, 238, 39);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.rectangle {
+    margin: auto;
+    height: 100px;
+    width: 150px;
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    text-size-adjust: auto;
+    padding-top: 15px;
+    display: inline-block;
+    padding-top: 10px;
 }
 
 
@@ -28,7 +65,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: hsl(230, 57%, 46%);
+    background: rgba(58, 40, 46, 255);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -109,7 +146,7 @@ section .title::after {
 
 .navbar.sticky {
     padding: 10px 0;
-    background: rgb(95, 43, 0);
+    background: rgba(58, 40, 46, 255);
 }
 
 .navbar .max-width {
@@ -125,12 +162,12 @@ section .title::after {
 }
 
 .navbar .logo a span {
-    color: hsl(230, 57%, 46%);
+    color: #DB9A64;
     transition: all 0.3s ease;
 }
 
 .navbar.sticky .logo a span {
-    color: hsl(230, 57%, 46%);
+    color: #DB9A64;
 }
 
 .navbar .menu li {
@@ -153,7 +190,7 @@ section .title::after {
 }
 
 .navbar.sticky .menu li a:hover {
-    background-color: rgb(95, 43, 0);
+    background-color: rgba(58, 40, 46, 255);
 }
 
 
@@ -173,7 +210,7 @@ section .title::after {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(95, 43, 0);
+    background: rgba(58, 40, 46, 255);
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -269,12 +306,58 @@ section .title::after {
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 30px;
-    border: 2px hsl(230, 57%, 46%);
+    border: 2px solid hsl(0, 63%, 41%);
     transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover {
-    border: 4px solid red;
+    border: 6px solid red;
+}
+
+
+/* =========skill bar============= */
+
+
+/* Apply CSS properties to ui-widgets class */
+
+.ui-widgets {
+    position: relative;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 9rem;
+    margin: 1.5rem;
+    border: 1rem solid rgb(2, 255, 2);
+    box-shadow: inset 0 0 7px rgb(160, 255, 122);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/*  Apply css properties to ui-widgets class 
+    and ui-values class*/
+
+.ui-widgets .ui-values {
+    top: 40px;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    font-weight: 700;
+    font-size: 2.0rem;
+}
+
+
+/*  Apply css properties to ui-widgets 
+    class and ui-labels class*/
+
+.ui-widgets .ui-labels {
+    left: 0;
+    bottom: -16px;
+    text-shadow: 0 0 10px rgb(255, 252, 252);
+    color: black;
+    position: absolute;
+    width: 100%;
+    font-size: 16px;
 }
 
 
@@ -298,7 +381,7 @@ section .title::after {
 }
 
 .columns {
-    margin: 0 -15px;
+    margin: 0 -35px;
     flex-wrap: wrap;
     display: flex;
 }
@@ -308,7 +391,7 @@ section .title::after {
     padding: 10px;
     border-radius: 6px;
     box-sizing: border-box;
-    background: white;
+    background: rgb(249, 241, 220);
 }
 
 .col-50 {
@@ -391,12 +474,31 @@ footer {
 }
 
 footer span a {
-    color: hsl(230, 57%, 46%);
+    color: rgb(49, 47, 47);
     text-decoration: none;
 }
 
 footer span a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 @media (max-width: 1104px) {
