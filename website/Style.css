@@ -186,7 +186,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-    color: black;
+    color: rgb(255, 124, 124);
 }
 
 .navbar.sticky .menu li a:hover {
@@ -313,6 +313,9 @@ section .title::after {
 .about .about-content .right a:hover {
     border: 6px solid red;
 }
+
+
+/* ================================================================== */
 
 
 /* =========skill bar============= */
