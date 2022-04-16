@@ -194,7 +194,7 @@ h1 {
 
 .row,
 .row>.column {
-    padding: 8px;
+    padding: 10px;
 }
 
 
@@ -221,6 +221,13 @@ h1 {
 .content {
     background-color: #feaf6e;
     padding: 10px;
+    border-radius: 10px;
+}
+
+.content:hover {
+    background-color: #fe685a;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 
