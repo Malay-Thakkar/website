@@ -18,7 +18,7 @@ html {
 }
 
 a:link {
-    color: rgb(119, 238, 39);
+    color: black;
     background-color: transparent;
     text-decoration: none;
 }
@@ -30,7 +30,7 @@ a:visited {
 }
 
 a:hover {
-    color: yellow;
+    color: chartreuse;
     background-color: transparent;
     text-decoration: underline;
 }
@@ -203,7 +203,8 @@ h1 {
 .column {
     float: left;
     margin: auto;
-    width: 30%
+    width: 30%;
+    size: auto;
 }
 
 
@@ -222,12 +223,15 @@ h1 {
     background-color: #feaf6e;
     padding: 10px;
     border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
 .content:hover {
     background-color: #fe685a;
     padding: 10px;
     border-radius: 10px;
+    transform: scale(1.1);
 }
 
 
