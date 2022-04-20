@@ -1,2 +1,2 @@
 # website
-LINK: https://github.com/Malay-Thakkar/website/blob/main/website/index.html
+LINK: https://malay-thakkar.github.io/website/website/index.html
