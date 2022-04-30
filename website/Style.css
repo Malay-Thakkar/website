@@ -569,7 +569,7 @@ footer span a:hover {
 }
 
 .social-media-list li a {
-    color: rgb(239, 37, 37);
+    color: rgb(208, 115, 28);
 }
 
 .social-media-list li {
@@ -580,7 +580,7 @@ footer span a:hover {
     margin: 10px 3px;
     line-height: 60px;
     border-radius: 50%;
-    color: rgb(152, 203, 0);
+    color: rgb(223, 180, 61);
     background-color: rgb(27, 27, 27);
     cursor: pointer;
     transition: all .2s ease-in-out;
@@ -595,22 +595,11 @@ footer span a:hover {
     text-align: center;
 }
 
-.social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px rgb(80, 18, 18);
-    transition: all .2s ease-in-out;
-}
-
 .social-media-list li:hover {
-    background-color: rgb(170, 95, 95);
+    background-color: rgb(49, 47, 47);
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #DB9A64;
+    transition: all .2s ease-in-out;
 }
 
 .social-media-list li:hover:after {
