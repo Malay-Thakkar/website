@@ -652,6 +652,8 @@ hr {
     .menu-btn {
         display: block;
         z-index: 999;
+        align-content: center;
+        text-align: center;
     }
     .menu-btn i.active:before {
         content: "\f00d";
@@ -672,6 +674,8 @@ hr {
     }
     .navbar .menu li {
         display: block;
+        align-content: center;
+        text-align: center;
     }
     .navbar .menu li a {
         display: inline-block;

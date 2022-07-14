@@ -223,20 +223,44 @@ a:active {
 /* Content */
 
 .content {
-    background-color: #feaf6e;
-    padding: 10px;
+    background-color: #FFC18E;
+    padding: 15px;
     border-radius: 10px;
     display: block;
     margin: auto;
 }
 
 .content:hover {
-    background-color: #fe685a;
+    background-color: #7A4069;
     padding: 10px;
     border-radius: 10px;
     transform: scale(1.1);
     top: 2px;
     left: 2px;
+}
+
+.content a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.content a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: chartreuse;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.content a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 
