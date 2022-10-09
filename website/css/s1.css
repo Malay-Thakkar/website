@@ -1,0 +1,356 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(banner.png);
+    background-color: rgba(59, 41, 46, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: chartreuse;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.rectangle {
+    margin: auto;
+    height: 100px;
+    width: 150px;
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    text-size-adjust: auto;
+    padding-top: 15px;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+
+/* navbar styling */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background-color: rgba(59, 41, 46, 255);
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    background: rgba(58, 40, 46, 255);
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #DB9A64;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: #DB9A64;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #DB9A64;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #DB9A64;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: black;
+}
+
+.navbar.sticky .menu li a:hover {
+    background-color: rgba(58, 40, 46, 255);
+}
+
+
+/*=============================================================*/
+
+
+/* buttan */
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgba(58, 40, 46, 255);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 20px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(90%);
+}
+
+
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(58, 40, 46, 255);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+
+/* Center website */
+
+.portfolio .title {
+    margin: 10px;
+    margin-top: 0%;
+    padding: auto;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+
+/* Add padding BETWEEN each column */
+
+.row,
+.row>.column {
+    padding: 10px;
+}
+
+
+/* Create four equal columns that floats next to each other */
+
+.column {
+    float: left;
+    margin: auto;
+    width: 30%;
+    size: auto;
+}
+
+
+/* Clear floats after rows */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Content */
+
+.content {
+    background-color: #FFC18E;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.content:hover {
+    background-color: #7A4069;
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1.1);
+    top: 2px;
+    left: 2px;
+}
+
+.content a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.content a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: chartreuse;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.content a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/* footer section styling */
+
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: rgb(49, 47, 47);
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .max-width {
+        max-width: 930px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about .about-content .right {
+        font-size: 19px;
+    }
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 45px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
