@@ -1,15 +1,95 @@
+.row {
+    margin: 8px -16px;
+}
+
+
+/* Add padding BETWEEN each column */
+
+.row,
+.row>.column {
+    padding: 10px;
+}
+
+
+/* Create four equal columns that floats next to each other */
+
+.column {
+    float: left;
+    margin: auto;
+    width: 30%;
+    size: auto;
+}
+
+
+/* Clear floats after rows */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Content */
+
+.content {
+    background-color: #FFC18E;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.content:hover {
+    background-color: #7A4069;
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1.1);
+    top: 2px;
+    left: 2px;
+}
+
+.content a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.content a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: chartreuse;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.content a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
 }
 
+.p {
+    color: ivory;
+}
+
 body {
-    background-image: url(banner.png);
+    background-image: url(../img/banner.png);
+    background-size: fixed;
+    background-attachment: fixed;
     background-color: rgba(59, 41, 46, 255);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
 }
 
@@ -279,7 +359,7 @@ section .title::after {
     text-transform: capitalize;
     font-weight: 300;
     line-height: 70px;
-    color: #fff;
+    color: #FFC18E;
     margin-bottom: 55px;
 }
 
@@ -296,8 +376,9 @@ section .title::after {
     margin-bottom: 55px;
 }
 
-.skills {
+.skills .h2 {
     margin-bottom: 10px;
+    color: #FFC18E;
 }
 
 .about .about-content .right a {
@@ -478,9 +559,9 @@ section .title::after {
 
 form {
     max-width: 500px;
-    margin: auto;
+    margin: 5%;
     text-align: left;
-    padding: 20px 0;
+    padding: 0px 0;
     display: block;
 }
 
